@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/barrasuperior"
+        android:orientation="horizontal"
+        android:id="@+id/linea"
+        android:layout_above="@+id/tool_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="FEEDBACK"
+            android:gravity="center"
+            android:textColor="#000"
+            android:id="@+id/textView" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/ScrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdgeLength="0dp"
+        android:fillViewport="false"
+        android:layout_below="@+id/linea"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/lobueno"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="¿Sugerencias?"
+            android:textStyle="bold"
+            android:id="@+id/text2"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:background="@drawable/corneraccesotext"
+            android:gravity="start"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:hint="Envíanos tus sugerencias..."
+            android:id="@+id/editText3"
+            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="ENVIAR MENSAJE"
+            android:id="@+id/enviar"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:background="@drawable/corner"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

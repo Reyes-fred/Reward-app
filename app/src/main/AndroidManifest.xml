@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jivamukti.techdev.com.jivamukti" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Required to scan for and connect to Estimote Beacons via Bluetooth. -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Required for BLE scanning on Android 6.0 and above. -->
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <!-- Required to access Estimote Cloud. -->
+
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/iconoapp"
+        android:label="Jivamukti Puebla"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".TutorialActivity"
+            android:label="Jivamukti Puebla"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AccesoActivity"
+            android:label="@string/title_activity_acceso"
+
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".comofuncionaActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".RegistroCompletoActivity"
+            android:label="@string/title_activity_registro_completo"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".TerminosActivity"
+            android:label="@string/title_activity_terminos"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

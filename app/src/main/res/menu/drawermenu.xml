@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:title=""
+          android:id="@+id/nav_item_premios"
+          android:icon="@drawable/icono_premios">
+    </item>
+
+
+    <item android:title= ""
+          android:id="@+id/nav_item_micuenta"
+           android:icon="@drawable/icono_cuenta"
+          />
+
+
+    <item android:title=""
+        android:id="@+id/nav_item_comofunciona"
+        android:icon="@drawable/icono_funcion"
+        />
+
+    <item android:title=""
+        android:id="@+id/nav_item_feedback"
+        android:icon="@drawable/icono_feed"
+        />
+
+    <item android:title=""
+        android:id="@+id/nav_item_terminos"
+        android:icon="@drawable/icono_terminos"
+        />
+
+
+
+
+
+
+</menu>

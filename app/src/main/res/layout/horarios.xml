@@ -1,0 +1,65 @@
+<LinearLayout xmlns:agendaCalendar="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/barrasuperior"
+        android:orientation="horizontal"
+        android:id="@+id/linea"
+        android:layout_above="@+id/tool_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="HORARIOS"
+            android:gravity="center"
+            android:textColor="#000"
+            android:id="@+id/textView" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:agendaCalendar="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:elevation="8dp"
+        >
+
+        <include
+            android:id="@+id/activity_toolbar"
+            layout="@layout/tool_bar"
+            android:elevation="8dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            />
+
+        <com.github.tibolte.agendacalendarview.AgendaCalendarView
+            android:id="@+id/agenda_calendar_view"
+            android:layout_width="match_parent"
+            android:elevation="8dp"
+            android:layout_height="match_parent"
+            agendaCalendar:agendaCurrentDayTextColor="@color/theme_primary"
+            agendaCalendar:calendarColor="@android:color/white"
+            agendaCalendar:calendarCurrentDayTextColor="@color/calendar_text_current_day"
+            agendaCalendar:calendarDayTextColor="@color/theme_primary"
+            agendaCalendar:calendarHeaderColor="@color/theme_primary_dark"
+            agendaCalendar:calendarPastDayTextColor="@android:color/darker_gray"
+            agendaCalendar:fabColor="@color/theme_accent" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
